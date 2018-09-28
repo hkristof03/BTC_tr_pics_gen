@@ -1,14 +1,60 @@
 #!/usr/bin/env bash
 
-python makeGraphAndVisualize.py 20170701 20170715 &
-python makeGraphAndVisualize.py 20170716 20170731 &
-python makeGraphAndVisualize.py 20170801 20170815 &
-python makeGraphAndVisualize.py 20170815 20170831 &
-python makeGraphAndVisualize.py 20170901 20170915 &
-python makeGraphAndVisualize.py 20170916 20170930 &
-python makeGraphAndVisualize.py 20171001 20171015 &
-python makeGraphAndVisualize.py 20171016 20171031 &
-python makeGraphAndVisualize.py 20171101 20171115 &
-python makeGraphAndVisualize.py 20171116 20171130 &
-python makeGraphAndVisualize.py 20171201 20171215 &
-python makeGraphAndVisualize.py 20171216 20171231 &
+python makeGraphAndVisualize.py 20170701 20170705 &
+python makeGraphAndVisualize.py 20170706 20170710 &
+python makeGraphAndVisualize.py 20170711 20170715 &
+python makeGraphAndVisualize.py 20170716 20170720 &
+python makeGraphAndVisualize.py 20170721 20170725 &
+python makeGraphAndVisualize.py 20170726 20170731 &
+
+python makeGraphAndVisualize.py 20170801 20170805 &
+python makeGraphAndVisualize.py 20170806 20170810 &
+python makeGraphAndVisualize.py 20170811 20170815 &
+python makeGraphAndVisualize.py 20170816 20170820 &
+python makeGraphAndVisualize.py 20170821 20170825 &
+python makeGraphAndVisualize.py 20170826 20170831 &
+
+python makeGraphAndVisualize.py 20170901 20170905 &
+python makeGraphAndVisualize.py 20170906 20170910 &
+python makeGraphAndVisualize.py 20170911 20170915 &
+python makeGraphAndVisualize.py 20170916 20170920 &
+python makeGraphAndVisualize.py 20170921 20170925 &
+python makeGraphAndVisualize.py 20170926 20170930 &
+
+python makeGraphAndVisualize.py 20171001 20171005 &
+python makeGraphAndVisualize.py 20171006 20171010 &
+python makeGraphAndVisualize.py 20171011 20171015 &
+python makeGraphAndVisualize.py 20171016 20171020 &
+python makeGraphAndVisualize.py 20171021 20171025 &
+python makeGraphAndVisualize.py 20171026 20171031 &
+
+python makeGraphAndVisualize.py 20171101 20171105 &
+python makeGraphAndVisualize.py 20171106 20171110 &
+python makeGraphAndVisualize.py 20171111 20171115 &
+python makeGraphAndVisualize.py 20171116 20171120 &
+python makeGraphAndVisualize.py 20171121 20171125 &
+python makeGraphAndVisualize.py 20171126 20171130 &
+
+python makeGraphAndVisualize.py 20171201 20171205 &
+python makeGraphAndVisualize.py 20171206 20171210 &
+python makeGraphAndVisualize.py 20171211 20171215 &
+python makeGraphAndVisualize.py 20171216 20171220 &
+python makeGraphAndVisualize.py 20171221 20171225 &
+python makeGraphAndVisualize.py 20171226 20171231 &
+
+python makeGraphAndVisualize.py 20180101 20180105 &
+python makeGraphAndVisualize.py 20180106 20180110 &
+python makeGraphAndVisualize.py 20180111 20180115 &
+python makeGraphAndVisualize.py 20180116 20180120 &
+python makeGraphAndVisualize.py 20180121 20180125 &
+python makeGraphAndVisualize.py 20180126 20180131 &
+
+python makeGraphAndVisualize.py 20180201 20180205 &
+python makeGraphAndVisualize.py 20180206 20180210 &
+python makeGraphAndVisualize.py 20180211 20180215 &
+python makeGraphAndVisualize.py 20180216 20180220 &
+python makeGraphAndVisualize.py 20180221 20180225 &
+python makeGraphAndVisualize.py 20180226 20180228 &
+
+python makeGraphAndVisualize.py 20180301 20180305 &
+python makeGraphAndVisualize.py 20180306 20180310 &
