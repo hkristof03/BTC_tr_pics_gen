@@ -1,6 +1,8 @@
 import requests
 import json
 import networkx as nx
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 #%matplotlib inline
 import os
@@ -153,34 +155,49 @@ def create_tr_graph_and_visualize(start_date,end_date):
     creation_times = []
 
 
-    path = '/home/hallgato-horvathkristof/Transaction_graphs/Graph_pics/'
-    existing_blocks = glob.glob("/home/hallgato-horvathkristof/Transaction_graphs/Graph_pics/*.png")
+    #path = '/home/hallgato-horvathkristof/Transaction_graphs/Graph_pics/'
+    path = '/data/'
+    existing_blocks = glob.glob(path+"*.png")
 
     for n in range(len(block_hashes)):
         one_day_block_hashes = block_hashes[n]
 
         for i in range(len(one_day_block_hashes)):
 
-            given_block_data, block_height, block_creation_time = parse_block_data(one_day_block_hashes[i])
+            try:
 
-            block_picture = str(block_height) + ".png"
+                given_block_data, block_height, block_creation_time = parse_block_data(one_day_block_hashes[i])
 
-            if block_picture in existing_blocks:
-                continue
+                block_picture = str(block_height) + ".png"
 
-            tr_graph = create_tr_graph(given_block_data)
-            matrix = nx.convert_matrix.to_numpy_matrix(tr_graph)   #creating adjacency matrix from every block's transactions
-            print("block_height:", block_height, "matrix_shape:", matrix.shape)
+                if block_picture in existing_blocks:
+                    continue
 
-            fname = str(block_height) + '.png'
-            nx.draw(tr_graph,node_color='r',font_size='30',node_size=50,edge_color='black',arrowsize=30)
-            plt.savefig(path + fname)
-            #graph_picture = mpimg.imread(os.getcwd() + "\\" + str(block_height) + ".png")
-            #append_to_hdf5_file(matrix,block_height,block_creation_time,graph_picture)
-            plt.clf()
+                tr_graph = create_tr_graph(given_block_data)
+                matrix = nx.convert_matrix.to_numpy_matrix(tr_graph)   #creating adjacency matrix from every block's transactions
+                print("block_height:", block_height, "matrix_shape:", matrix.shape)
 
-            block_heights.append(block_height)
-            creation_times.append(block_creation_time)
+                fname = str(block_height) + '.png'
+                nx.draw(tr_graph,node_color='r',font_size='30',node_size=50,edge_color='black',arrowsize=30)
+                plt.savefig(path + fname)
+                #graph_picture = mpimg.imread(os.getcwd() + "\\" + str(block_height) + ".png")
+                #append_to_hdf5_file(matrix,block_height,block_creation_time,graph_picture)
+                plt.clf()
+
+                block_heights.append(block_height)
+                creation_times.append(block_creation_time)
+
+             except ValueError:
+
+                 print('Decoding JSON has failed at day :',n,' block hash : ', i)
+
+             except KeyError as error:
+
+                 print('KeyError at day:', n, 'block hash : ', i)
+
+             except Exception as exception:
+
+                 print('Output unexpected exceptions at day:', n, 'block hash:', i)
 
 
     plt.close()
