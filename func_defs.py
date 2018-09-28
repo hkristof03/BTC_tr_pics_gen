@@ -10,7 +10,7 @@ import numpy as np
 import h5py
 import matplotlib.image as mpimg
 import glob
-
+import pandas as pd
 
 
 #converting given dates to milisec to be able to query blocks from blockchain.info by dates
@@ -149,6 +149,9 @@ def create_tr_graph_and_visualize(start_date,end_date):
 
     plt.figure(figsize=(50,50))
 
+    block_heights = []
+    creation_times = []
+
 
     path = '/home/hallgato-horvathkristof/Transaction_graphs/Graph_pics/'
     existing_blocks = glob.glob("/home/hallgato-horvathkristof/Transaction_graphs/Graph_pics/*.png")
@@ -176,5 +179,12 @@ def create_tr_graph_and_visualize(start_date,end_date):
             #append_to_hdf5_file(matrix,block_height,block_creation_time,graph_picture)
             plt.clf()
 
+            block_heights.append(block_height)
+            creation_times.append(block_creation_time)
+
 
     plt.close()
+
+    df = pd.DataFrame({'block_heights':block_heights, 'block_creation_times': creation_times})
+    df_name = str(start_date) + '_' + str(end_date) + '.csv'
+    df.to_csv(path + df_name, index=False)
