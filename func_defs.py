@@ -187,17 +187,17 @@ def create_tr_graph_and_visualize(start_date,end_date):
                 block_heights.append(block_height)
                 creation_times.append(block_creation_time)
 
-             except ValueError:
+            except ValueError:
 
-                 print('Decoding JSON has failed at day :',n,' block hash : ', i)
+                print('Decoding JSON has failed at day :',n,' block hash : ', i)
 
-             except KeyError as error:
+            except KeyError as error:
 
-                 print('KeyError at day:', n, 'block hash : ', i)
+                print('KeyError at day:', n, 'block hash : ', i)
 
-             except Exception as exception:
+            except Exception as exception:
 
-                 print('Output unexpected exceptions at day:', n, 'block hash:', i)
+                print('Output unexpected exceptions at day:', n, 'block hash:', i)
 
 
     plt.close()
