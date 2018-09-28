@@ -155,7 +155,7 @@ def create_tr_graph_and_visualize(start_date,end_date):
     creation_times = []
 
 
-    #path = '/home/hallgato-horvathkristof/Transaction_graphs/Graph_pics/'
+    #path = r'D:\bme\Szakdolgozat'
     path = '/data/'
     existing_blocks = glob.glob(path+"*.png")
 

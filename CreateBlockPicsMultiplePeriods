@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-python makeGraphAndVisualize.py 20170701 20170115 &
-python makeGraphAndVisualize.py 20170116 20170131 &
+python makeGraphAndVisualize.py 20170701 20170715 &
+python makeGraphAndVisualize.py 20170716 20170731 &
 python makeGraphAndVisualize.py 20170801 20170815 &
 python makeGraphAndVisualize.py 20170815 20170831 &
 python makeGraphAndVisualize.py 20170901 20170915 &
