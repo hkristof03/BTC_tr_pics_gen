@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+python makeGraphAndVisualize.py 20170701 20170710 &
+python makeGraphAndVisualize.py 20170711 20170720 &
+python makeGraphAndVisualize.py 20170721 20170731 &
