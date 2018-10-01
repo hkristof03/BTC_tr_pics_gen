@@ -3,3 +3,11 @@
 python makeGraphAndVisualize.py 20170701 20170710 &
 python makeGraphAndVisualize.py 20170711 20170720 &
 python makeGraphAndVisualize.py 20170721 20170731 &
+python makeGraphAndVisualize.py 20171001 20171010 &
+python makeGraphAndVisualize.py 20171011 20171020 &
+sleep 15s
+python makeGraphAndVisualize.py 20171021 20171031 &
+python makeGraphAndVisualize.py 20171101 20171110 &
+python makeGraphAndVisualize.py 20171111 20171120 &
+python makeGraphAndVisualize.py 20171121 20171130 &
+python makeGraphAndVisualize.py 20171201 20171210 &
