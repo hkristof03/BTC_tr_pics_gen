@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+python makeGraphAndVisualize.py 20170221 20170225 &
+python makeGraphAndVisualize.py 20170226 20170228 &
+python makeGraphAndVisualize.py 20170301 20170305 &
+python makeGraphAndVisualize.py 20170306 20170310 &
+python makeGraphAndVisualize.py 20170311 20170315 &
+sleep 15s
+python makeGraphAndVisualize.py 20170316 20170320 &
+python makeGraphAndVisualize.py 20170321 20170325 &
+python makeGraphAndVisualize.py 20170326 20170331 &
+python makeGraphAndVisualize.py 20170401 20170405 &
+python makeGraphAndVisualize.py 20170406 20170410 &
+sleep 15s
+python makeGraphAndVisualize.py 20170411 20170415 &
+python makeGraphAndVisualize.py 20170416 20170420 &
+python makeGraphAndVisualize.py 20170421 20170425 &
+python makeGraphAndVisualize.py 20170426 20170430 &
+python makeGraphAndVisualize.py 20170501 20170505 &
+sleep 15s
+python makeGraphAndVisualize.py 20170506 20170510 &
+python makeGraphAndVisualize.py 20170511 20170515 &
+python makeGraphAndVisualize.py 20170516 20170520 &
+python makeGraphAndVisualize.py 20170521 20170525 &
+python makeGraphAndVisualize.py 20170526 20170531 &
+sleep 15s
+python makeGraphAndVisualize.py 20170601 20170605 &
+python makeGraphAndVisualize.py 20170606 20170610 &
+python makeGraphAndVisualize.py 20170611 20170615 &
+python makeGraphAndVisualize.py 20170616 20170620 &
+python makeGraphAndVisualize.py 20170621 20170625 &
+sleep 15s
+python makeGraphAndVisualize.py 20170626 20170630 &

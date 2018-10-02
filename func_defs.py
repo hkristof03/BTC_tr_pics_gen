@@ -143,7 +143,7 @@ def append_to_hdf5_file(matrix,block_height,block_creation_time,block_hash, hdf5
         dataset.attrs['block_height'] = block_height
         dataset.attrs['block_hash'] = block_hash
         #other metadata for each block's metadata...
-    
+
 
 
     hdf5_file.close()
@@ -162,6 +162,8 @@ def create_tr_graph_and_visualize(start_date,end_date):
     creation_times_ = []
     block_hashes_ = []
 
+    my_dpi = 96
+
     path = r'D:/bme/Szakdolgozat/Test/'
     #path = '/data/'
     existing_blocks = glob.glob(path+"*.png")
@@ -174,7 +176,7 @@ def create_tr_graph_and_visualize(start_date,end_date):
 
             try:
 
-                plt.figure(figsize=(50,50))
+                plt.figure(figsize=(1024/my_dpi, 1024/my_dpi), dpi=my_dpi)
                 given_block_data, block_height, block_creation_time, block_hash = parse_block_data(one_day_block_hashes[i])
 
                 block_picture = str(block_height) + ".png"
@@ -187,8 +189,8 @@ def create_tr_graph_and_visualize(start_date,end_date):
                 print("block_height:", block_height, "matrix_shape:", matrix.shape)
 
                 fname = str(block_height) + '.png'
-                nx.draw(tr_graph,node_color='r',font_size='30',node_size=50,edge_color='black',arrowsize=30)
-                plt.savefig(path + fname)
+                nx.draw(tr_graph,node_color='r',font_size='1',node_size=1,edge_color='black',arrowsize=1, width=0.13)
+                plt.savefig(path + fname, dpi=my_dpi)
                 #graph_picture = mpimg.imread(os.getcwd() + "\\" + str(block_height) + ".png")
                 append_to_hdf5_file(matrix,block_height,block_creation_time,block_hash, hdf5_filename)
                 #plt.clf()

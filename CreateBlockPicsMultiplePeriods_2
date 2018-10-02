@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+python makeGraphAndVisualize.py 20180311 20180315 &
+python makeGraphAndVisualize.py 20180316 20180320 &
+python makeGraphAndVisualize.py 20180321 20180325 &
+python makeGraphAndVisualize.py 20180326 20180331 &
+python makeGraphAndVisualize.py 20180401 20180405 &
+sleep 15s
+python makeGraphAndVisualize.py 20180406 20180410 &
+python makeGraphAndVisualize.py 20180411 20180415 &
+python makeGraphAndVisualize.py 20180416 20180420 &
+python makeGraphAndVisualize.py 20180421 20180425 &
+python makeGraphAndVisualize.py 20180426 20180430 &
+sleep 15s
+python makeGraphAndVisualize.py 20180501 20180505 &
+python makeGraphAndVisualize.py 20180506 20180510 &
+python makeGraphAndVisualize.py 20180511 20180515 &
+python makeGraphAndVisualize.py 20180516 20180520 &
+python makeGraphAndVisualize.py 20180521 20180525 &
+sleep 15s
+python makeGraphAndVisualize.py 20180526 20180531 &
+python makeGraphAndVisualize.py 20180601 20180605 &
+python makeGraphAndVisualize.py 20180606 20180610 &
+python makeGraphAndVisualize.py 20180611 20180615 &
+python makeGraphAndVisualize.py 20180616 20180620 &
+sleep 15s
+python makeGraphAndVisualize.py 20180621 20180625 &
+python makeGraphAndVisualize.py 20180626 20180630 &
+python makeGraphAndVisualize.py 20180701 20180705 &
+python makeGraphAndVisualize.py 20180706 20180710 &
+python makeGraphAndVisualize.py 20180711 20180715 &
+sleep 15s
+python makeGraphAndVisualize.py 20180716 20180720 &
+python makeGraphAndVisualize.py 20180721 20180725 &
+python makeGraphAndVisualize.py 20180726 20180731 &
+python makeGraphAndVisualize.py 20180801 20180805 &
+python makeGraphAndVisualize.py 20180806 20180810 &
+sleep 15s
+python makeGraphAndVisualize.py 20180811 20180815 &
+python makeGraphAndVisualize.py 20180816 20180820 &
+python makeGraphAndVisualize.py 20180821 20180825 &
+python makeGraphAndVisualize.py 20180826 20180831 &
+python makeGraphAndVisualize.py 20180901 20180905 &
+sleep 15s
+python makeGraphAndVisualize.py 20180906 20180910 &
+python makeGraphAndVisualize.py 20180911 20180915 &
+python makeGraphAndVisualize.py 20180916 20180920 &
+python makeGraphAndVisualize.py 20180921 20180925 &
+python makeGraphAndVisualize.py 20180926 20180930 &
+sleep 15s
+python makeGraphAndVisualize.py 20170101 20170105 &
+python makeGraphAndVisualize.py 20170106 20170110 &
+python makeGraphAndVisualize.py 20170111 20170115 &
+python makeGraphAndVisualize.py 20170116 20170120 &
+python makeGraphAndVisualize.py 20170121 20170125 &
+sleep 15s
+python makeGraphAndVisualize.py 20170126 20170131 &
+python makeGraphAndVisualize.py 20170201 20170205 &
+python makeGraphAndVisualize.py 20170206 20170210 &
+python makeGraphAndVisualize.py 20170211 20170215 &
+python makeGraphAndVisualize.py 20170216 20170220 &
